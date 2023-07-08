@@ -4,7 +4,7 @@ import openpyxl
 
 def generate_name():
     a = RussianNames().get_person().split()
-    return [a[1]]+[a[0]]+[a[2]]
+    return [a[1],a[0],a[2]]
 
 def XLSX(number):
     book = openpyxl.Workbook() #создание книги эксель
